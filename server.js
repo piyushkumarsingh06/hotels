@@ -43,8 +43,8 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 const PORT = process.env.PORT || 3000;
 
-const Person = require('./models/Person');
-const menuItem = require('./models/menuItem');
+const Person = require('./Models/Person');
+const menuItem = require('./Models/menuItem');
 
 app.get('/',function(req,res){
     res.send('Welcome to my hotel, how i can help you')
