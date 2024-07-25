@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Person = require('./Models/Person');
+const Person = require('../Models/Person');
 
 //POST route add a person
 router.post('/',async(req,res)=>{
