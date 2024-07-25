@@ -43,8 +43,15 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 const PORT = process.env.PORT || 3000;
 
-const Person = require('./Models/Person');
-const menuItem = require('./Models/menuItem');
+// const Person = require('./Models/Person');
+// const menuItem = require('./Models/menuItem');
+
+
+//Middleware function
+// const logrequest =(req,res,next) =>{
+//     console.log(`${new Date().toLocalString()} Request made to : ${req.originalUrl}`);
+//     next();
+// }
 
 app.get('/',function(req,res){
     res.send('Welcome to my hotel, how i can help you')
